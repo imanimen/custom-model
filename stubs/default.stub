@@ -1,0 +1,15 @@
+<?php
+namespace App\Models\{{class_name}}.php;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * Class {{class_name}}
+ */
+class {{class_name}} extends Model
+{
+    use HasFactory;
+    public function {{second_model}}() {
+        return $this->{{relation}}({sec_model}::class);
+    }
+}
