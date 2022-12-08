@@ -50,6 +50,8 @@ class custom extends Command
         $stub     = str_replace('{{class_name}}', $firstModel, $stub);
         $stub     = str_replace('{{second_model}}', strtolower($secondModel).'s', $stub);
         if ($relation == '11')
+
+        
         {
             $relation = 'BelongsTo';
         }
