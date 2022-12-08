@@ -57,8 +57,12 @@ class custom extends Command
         $stub     = str_replace('{{sec_model}}', $secondModel, $stub);
         $writePath1= base_path()  . '/' . 'app/Models/' . $firstModel  .'.php';
         $writePath2= base_path()  . '/' .  'app/Models/' . $secondModel .'.php';
+        // write the first model
         file_put_contents($writePath1, $stub);
+        // wirite the second model
         file_put_contents($writePath2, $stub);
+
+        //TODO: Implement Migrations
 
     }
 }
